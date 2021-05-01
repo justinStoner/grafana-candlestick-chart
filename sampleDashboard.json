@@ -1,0 +1,110 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "maxDataPoints": 50,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "Default value of text input option"
+      },
+      "pluginVersion": "7.5.5",
+      "targets": [
+        {
+          "refId": "A",
+          "resolution": "60",
+          "symbol": "BINANCE:BTCUSDT",
+          "type": {
+            "label": "Candle",
+            "value": "candle"
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "BTC",
+      "type": "justinstoner-candlestick-charting"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "maxDataPoints": 50,
+      "options": {
+        "feedUrl": "https://cointelegraph.com/rss",
+        "useProxy": true
+      },
+      "pluginVersion": "7.5.5",
+      "targets": [
+        {
+          "format": "TABLE",
+          "queryText": "news?category=crypto&token=c24uh02ad3ifpcile2g0",
+          "refId": "A",
+          "resolution": "60",
+          "symbol": "AMZN",
+          "type": {
+            "label": "Candle",
+            "value": "candle"
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "News",
+      "type": "news"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-7d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "New dashboard Copy",
+  "uid": "LCEbixrGk",
+  "version": 12
+}
